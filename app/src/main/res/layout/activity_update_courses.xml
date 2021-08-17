@@ -6,20 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Update_courses">
 
-    <androidx.constraintlayout.utils.widget.ImageFilterButton
-        android:id="@+id/imageFilterButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/course1"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="377dp"
+        android:layout_height="322dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312"
+        app:srcCompat="@mipmap/course1" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="378dp"
         android:layout_height="466dp"
+
         android:layout_margin="30px"
 
         android:layout_marginLeft="30dp"
-
         android:layout_marginTop="232dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/layoutstyle"
@@ -30,8 +36,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.952">
 
         <EditText
