@@ -50,13 +50,29 @@ public class Course_Database extends SQLiteOpenHelper {
         }
         return  arr;
     }
-    public void update(String id,String name,String description,String teachername){
+    public boolean update(String id,String name,String description,String teachername){
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues values=new ContentValues();
         values.put("name",name);
-        values.put("description",description);
         values.put("teachername",teachername);
-        db.update("course",values,"id=?",new String[]{id});
+        values.put("description",description);
+
+        Cursor cursor = db.rawQuery("select * from course where id = ?",new String []{id} );
+        if (cursor.getCount()>0) {
+
+
+            long result =  db.update("course", values, "id=?", new String[]{id});
+            if (result == -1){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        else {
+            return false;
+        }
+
     }
     public void delete(String id){
         SQLiteDatabase db=this.getWritableDatabase();

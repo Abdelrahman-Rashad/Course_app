@@ -4,18 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".Update_courses">
 
     <androidx.constraintlayout.utils.widget.ImageFilterButton
-        android:id="@+id/imageFilterButton2"
+        android:id="@+id/imageFilterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/course1"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="378dp"
         android:layout_height="466dp"
         android:layout_margin="30px"
@@ -33,67 +31,95 @@
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_bias="0.952">
 
         <EditText
-            android:id="@+id/coursename"
-            android:layout_width="300dp"
-            android:layout_height="48dp"
-            android:layout_margin="10dp"
+            android:id="@+id/idstudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
             android:background="@drawable/edittextcourse"
             android:ems="10"
-            android:hint="Enter course name"
-            android:inputType="textPersonName"
+            android:hint="Enter id"
+            android:minHeight="48dp"
+            android:padding="10dp" /><![CDATA[
+            android:inputType="textPersonName" />
+
+        android:hint="Enter name"
+            android:inputType="textPersonName" />
+
+        ]]>
+
+        <EditText
+            android:id="@+id/coursenames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittextcourse"
+            android:ems="10"
+            android:hint="course name"
+            android:minHeight="48dp"
             android:padding="10dp" />
 
         <EditText
-            android:id="@+id/teachername"
-            android:layout_width="300dp"
-            android:layout_height="48dp"
-            android:layout_margin="10dp"
+            android:id="@+id/Teachername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:background="@drawable/edittextcourse"
             android:ems="10"
             android:hint="teacher name"
-            android:padding="10dp" />
-        android:hint="Enter your name"
-        android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp" /><![CDATA[
+            android:hint="Teacher name"
+            android:inputType="textPersonName" />
 
+
+        ]]>
 
         <EditText
-            android:id="@+id/description"
-            android:layout_width="300dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:id="@+id/descripe"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/edittextcourse"
             android:ems="10"
             android:gravity="start|fill_horizontal"
-            android:hint="Description"
+            android:hint="description"
             android:inputType="textMultiLine"
-            android:padding="10dp" />
+            android:padding="10dp" /><![CDATA[
+
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+        ]]>
 
         <Button
-            android:id="@+id/addcourse"
-            android:layout_width="273dp"
+            android:id="@+id/Update"
+            android:layout_width="274dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60px"
-            android:layout_marginTop="110px"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/buttonstyle"
-            android:text="Add"
+            android:text="Update"
             android:textAllCaps="false"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/update"
+            android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
             android:clickable="true"
+            android:minWidth="48dp"
             android:minHeight="48dp"
-            android:text="Update"
+            android:text="back"
             android:textColor="#E6473B"
             android:textSize="20sp"
             android:textStyle="bold" />
-    </LinearLayout>
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

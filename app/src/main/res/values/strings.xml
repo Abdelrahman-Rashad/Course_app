@@ -3,4 +3,8 @@
     <string name="invalid_name">Please Enter Valid Course Name</string>
     <string name="invalid_description">Please Enter Valid Description</string>
     <string name="invalid_teachername">Please Enter Valid Name</string>
+    <string name="invalid_id">Enter the correct id</string>
+    <string name="invalid_course">Enter the name of course</string>
+    <string name="invalid_teacher">Enter teacher name</string>
+    <string name="invalid_desription">Enter desription</string>
 </resources>
