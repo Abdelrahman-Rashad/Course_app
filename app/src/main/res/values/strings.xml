@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Course</string>
+    <string name="invalid_name">Please Enter Valid Course Name</string>
+    <string name="invalid_description">Please Enter Valid Description</string>
+    <string name="invalid_teachername">Please Enter Valid Name</string>
 </resources>
