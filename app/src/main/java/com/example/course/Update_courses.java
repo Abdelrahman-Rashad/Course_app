@@ -22,6 +22,8 @@ public class Update_courses extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_courses);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         AwesomeValidation awesomeValidation;
         EditText input = findViewById(R.id.idstudent);
 
@@ -87,12 +89,5 @@ public class Update_courses extends AppCompatActivity {
             }
         });
 
-        // back to add screen
-        findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
     }
 }

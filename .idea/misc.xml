@@ -7,9 +7,14 @@
         <entry key="..\:/android/Course/app/src/main/res/drawable/buttonstyle.xml" value="0.2490740740740741" />
         <entry key="..\:/android/Course/app/src/main/res/drawable/edittextcourse.xml" value="0.16799999999999998" />
         <entry key="..\:/android/Course/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/android/Course/app/src/main/res/drawable/layoutforstyle.xml" value="0.2703125" />
         <entry key="..\:/android/Course/app/src/main/res/drawable/layoutstyle.xml" value="0.2490740740740741" />
+        <entry key="..\:/android/Course/app/src/main/res/layout/activity_about.xml" value="0.176" />
+        <entry key="..\:/android/Course/app/src/main/res/layout/activity_courses.xml" value="0.4" />
+        <entry key="..\:/android/Course/app/src/main/res/layout/activity_detail.xml" value="0.176" />
         <entry key="..\:/android/Course/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/android/Course/app/src/main/res/layout/activity_update_courses.xml" value="0.264" />
+        <entry key="..\:/android/Course/app/src/main/res/layout/item_list.xml" value="0.536" />
       </map>
     </option>
   </component>

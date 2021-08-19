@@ -10,10 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Course">
         <activity
-            android:name=".Update_courses"
+            android:name=".detail"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"
+            android:parentActivityName=".CoursesActivity" />
+        <activity
+            android:name=".about"
+            android:exported="true" />
+        <activity
+            android:name=".Update_courses"
+            android:exported="true"
+            android:parentActivityName=".CoursesActivity" />
+        <activity
+            android:name=".CoursesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

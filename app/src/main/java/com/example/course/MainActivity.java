@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         AwesomeValidation awesomeValidation;
         EditText in = findViewById(R.id.teachername);
         EditText CourseName=(EditText) findViewById(R.id.coursename);
