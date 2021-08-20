@@ -10,6 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Course">
         <activity
+            android:name=".detail_admin"
+            android:parentActivityName=".CoursesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Startpage"
+            android:exported="true" />
+        <activity
+            android:name=".CoursesActivity"
+            android:exported="true"
+            android:parentActivityName=".Startpage" />
+        <activity
+            android:name=".SignUp_page"
+            android:exported="true"
+            android:parentActivityName=".Account_student" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:parentActivityName=".Account_student" />
+        <activity
+            android:name=".Account_student"
+            android:exported="true"
+            android:parentActivityName=".Startpage" />
+        <activity
+            android:name=".Account_admin"
+            android:parentActivityName=".Startpage"
+            android:exported="true" />
+        <activity
             android:name=".detail"
             android:exported="true" />
         <activity
@@ -24,7 +51,11 @@
             android:exported="true"
             android:parentActivityName=".CoursesActivity" />
         <activity
-            android:name=".CoursesActivity"
+            android:name=".Home"
+            android:exported="true"
+            android:parentActivityName=".Startpage" />
+        <activity
+            android:name=".Splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

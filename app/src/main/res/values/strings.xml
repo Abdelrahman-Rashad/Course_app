@@ -7,4 +7,9 @@
     <string name="invalid_course">Enter the name of course</string>
     <string name="invalid_teacher">Enter teacher name</string>
     <string name="invalid_desription">Enter desription</string>
+    <string name="invalid_n">Enter your name</string>
+    <string name="invalid_f">Enter full name</string>
+    <string name="invalid_e">"Enter valid e-mail "</string>
+    <string name="invalid_pa">pass don\"t less than 4 digit</string>
+    <string name="invalid_pass">enter correct password</string>
 </resources>

@@ -4,30 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".SignUp_page">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="377dp"
-        android:layout_height="322dp"
+        android:layout_width="418dp"
+        android:layout_height="326dp"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
-        app:srcCompat="@mipmap/course1" />
+        app:layout_constraintVertical_bias="0.312"
+        app:srcCompat="@mipmap/course1"
+        tools:ignore="UnknownIdInLayout" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="378dp"
-        android:layout_height="466dp"
+        android:layout_width="364dp"
+        android:layout_height="404dp"
+
         android:layout_margin="30px"
 
         android:layout_marginLeft="30dp"
-
         android:layout_marginTop="232dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/layoutstyle"
@@ -38,68 +36,69 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.952">
 
         <EditText
-            android:id="@+id/coursename"
-            android:layout_width="300dp"
-            android:layout_height="48dp"
-            android:layout_margin="10dp"
+            android:id="@+id/fullname"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:background="@drawable/edittextcourse"
             android:ems="10"
-            android:hint="Enter course name"
+            android:hint="Enter full_name"
             android:inputType="textPersonName"
+            android:minHeight="48dp"
             android:padding="10dp" />
 
         <EditText
-            android:id="@+id/teachername"
-            android:layout_width="300dp"
-            android:layout_height="48dp"
-            android:layout_margin="10dp"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:background="@drawable/edittextcourse"
             android:ems="10"
-            android:hint="teacher name"
+            android:hint="Enter user_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
             android:padding="10dp" />
-        android:hint="Enter your name"
-        android:inputType="textPersonName"
-
 
         <EditText
-            android:id="@+id/description"
-            android:layout_width="300dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:id="@+id/e_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:background="@drawable/edittextcourse"
             android:ems="10"
-            android:gravity="start|fill_horizontal"
-            android:hint="Description"
-            android:inputType="textMultiLine"
+            android:hint="Enter E-mail"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittextcourse"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
             android:padding="10dp" />
 
         <Button
-            android:id="@+id/addcourse"
-            android:layout_width="273dp"
+            android:id="@+id/sign"
+            android:layout_width="274dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60px"
-            android:layout_marginTop="110px"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/buttonstyle"
-            android:text="Add"
+            android:text="Sign Up"
             android:textAllCaps="false"
             android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/update1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="35dp"
-            android:clickable="true"
-            android:minHeight="48dp"
-            android:text="Update"
-            android:textColor="#E6473B"
-            android:textSize="20sp"
-            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

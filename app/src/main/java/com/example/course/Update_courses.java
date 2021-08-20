@@ -60,7 +60,7 @@ public class Update_courses extends AppCompatActivity {
 
                     if(checkUpdate==true){
                         Toast.makeText(Update_courses.this, "Updated...", Toast.LENGTH_LONG).show();
-                        //Toast.makeText(Update_courses.this, d.get(1).getTeacherName(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(Update_courses.this, d.get(0).getTeacherName(), Toast.LENGTH_LONG).show();
 
 
                     }
@@ -88,6 +88,7 @@ public class Update_courses extends AppCompatActivity {
                 Description.setText("");
             }
         });
+
 
     }
 }

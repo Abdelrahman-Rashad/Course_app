@@ -2,9 +2,6 @@ package com.example.course;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-//import  com.example.course.MainActivity;
-
-//import android.media.Image;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,24 +18,20 @@ import com.example.course.model.Course_Database;
 
 import java.util.ArrayList;
 
-public class CoursesActivity extends AppCompatActivity {
-
-
-
+public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_courses);
+        setContentView(R.layout.activity_home);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         //MainActivity main=new MainActivity();
 
 
         Course_Database db=new Course_Database(this);
         //String course_data= db.insert("Course","Details","Teacher");
-        ArrayList <Course> data=db.getdata();
+        ArrayList<Course> data=db.getdata();
         //Toast.makeText(this,data.get(1).getId()+"",Toast.LENGTH_LONG).show();
 
         //String course_data=db.insert(main.CourseName.getText().toString(),main.Description.getText().toString(),main.TeacherName.getText().toString());
@@ -55,8 +48,8 @@ public class CoursesActivity extends AppCompatActivity {
         }/*/
 
 
-        ListView list_View=findViewById(R.id.listview);
-        Add a =new Add(data);
+        ListView list_View=findViewById(R.id.listview_home);
+        Add1 a= new Add1(data);
         list_View.setAdapter(a);
 
 
@@ -73,32 +66,23 @@ public class CoursesActivity extends AppCompatActivity {
         list_View.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent =new Intent(CoursesActivity.this,detail_admin.class);
+                Intent intent =new Intent(Home.this,detail.class);
                 intent.putExtra("name",data.get(i).getName());
                 intent.putExtra("teachername",data.get(i).getTeacherName());
                 intent.putExtra("description",data.get(i).getDescription());
-                intent.putExtra("id",data.get(i).getId());
                 startActivity(intent);
             }
         });
 
-        Button b=(Button) findViewById(R.id.go_to_add_course);
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(CoursesActivity.this,MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
 
 
 
     }
 
-     class Add extends BaseAdapter{
+    class Add1 extends BaseAdapter {
         ArrayList<Course>l=new ArrayList<Course>();
-        public Add(ArrayList<Course>v){
+        public Add1(ArrayList<Course>v){
             this.l=v;
 
         }
@@ -120,7 +104,7 @@ public class CoursesActivity extends AppCompatActivity {
 
         @Override
         public View getView(int position, View view, ViewGroup viewGroup) {
-            LayoutInflater ly= getLayoutInflater();
+            LayoutInflater ly=getLayoutInflater();
             View view1=ly.inflate(R.layout.item_list,null);
             TextView tt=(TextView)view1.findViewById(R.id.row);
             TextView tt1=(TextView)view1.findViewById(R.id.row1);
@@ -132,9 +116,5 @@ public class CoursesActivity extends AppCompatActivity {
             return view1;
         }
     }
-
-
-
-
 
 }
