@@ -73,9 +73,19 @@
             android:background="@drawable/edittextcourse"
             android:ems="10"
             android:hint="Enter password"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:minHeight="48dp"
             android:padding="10dp" />
+        <CheckBox
+            android:id="@+id/Show2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:text="Show password"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/logn_admin"
