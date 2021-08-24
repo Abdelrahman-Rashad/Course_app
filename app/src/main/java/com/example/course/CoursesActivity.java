@@ -54,7 +54,6 @@ public class CoursesActivity extends AppCompatActivity {
             k++;
         }/*/
 
-
         ListView list_View=findViewById(R.id.listview);
         Add a =new Add(data);
         list_View.setAdapter(a);

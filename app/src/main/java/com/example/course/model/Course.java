@@ -2,10 +2,10 @@ package com.example.course.model;
 
 public class Course {
 
-    int Id;
-    String Name;
-    String Description;
-    String TeacherName;
+     int Id;
+     String Name;
+     String Description;
+     String TeacherName;
 
     public Course(int id, String name, String description, String teacherName) {
         Id = id;
@@ -45,4 +45,5 @@ public class Course {
     public void setTeacherName(String teacherName) {
         TeacherName = teacherName;
     }
+
 }

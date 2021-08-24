@@ -26,7 +26,7 @@ public class detail_admin extends AppCompatActivity {
 
         TextView t1=(TextView) findViewById(R.id.show_name_admin);
         TextView t2=(TextView) findViewById(R.id.show_teachername_admin);
-        TextView t3=(TextView) findViewById(R.id.show_description_admin);
+        TextView t3=(TextView) findViewById(R.id.show_des_admin);
 
         t1.setText(s1);
         t2.setText(s2);
